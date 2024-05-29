@@ -1,0 +1,379 @@
+$standardSpace: 16px;
+$fontStyle: $standardSpace sans-serif;
+
+$primaryColor: #000000;
+$secondColor: #686868;
+$lightGrayColor: #F5F5F5;
+$darkPurpleColor: #410F79;
+$purpleColor: #5902C8;
+$greenColor: #58AF00;
+$pinkColor: #C91ECC;
+$darkPinkColor: #AC0053;
+$bluePoolColor: #08B4B4;
+$blueColor: #08A3E5;
+$darkBlueColor: #361ECC;
+$orangeColor: #EC7F00;
+$redColor: #B60000;
+$whiteColor: #ffff;
+$shadow: 0 6px 22px rgba(0, 0, 0, 0.2);
+$blackShadow: 0 5 5px #00000090;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: $fontStyle;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.topSection {
+    background-color: $purpleColor;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .topSectionText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin: 0 50px;
+        width: 70vh;
+        color: $whiteColor;
+
+        h1, span {
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    img {
+        height: 80vh;
+    }
+
+    .topSectionBtn {
+        background-color: $whiteColor;
+        color: $purpleColor;
+        border-radius: 40px;
+
+        &:hover {
+            box-shadow: $blackShadow;
+        }
+    }
+}
+
+.firstCardSection {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    align-content: center;
+
+    .firstCardSectionText {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px ;
+
+        span {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-weight: 700;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.proplayerSection {
+    display: flex;
+
+    img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    .proplayerSectionText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        color: $whiteColor;
+        background-color: none;
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        background: linear-gradient(294deg, rgba(88, 2, 200, 0.986) 42%, rgba(88, 2, 200, 0.568) 58%, rgba(88, 2, 200, 0.062) 65%);
+        pointer-events: none;
+        padding: 80px;
+
+        
+        .proplayerSectionTextH1 {
+            text-align: left;
+            margin-bottom: 20px;
+            width: 60vh;
+        }
+
+        .proplayerSectionTextSpan {
+            text-align: left;
+            width: 60vh;
+            margin-bottom: 20px;
+        }
+
+        .proplayerSectionTextBtn {
+            text-align: left;
+            width: 60vh;
+
+            .topSectionBtn {
+                background-color: $whiteColor;
+                color: $purpleColor;
+                border-radius: 40px;
+        
+                &:hover {
+                    box-shadow: $blackShadow;
+                }
+            }
+        }
+    }
+}
+
+.patrocinadoresSection {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .patrocinadoresSectionText {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px ;
+
+        span {
+            font-size: 16px;
+        }
+
+        h4 {
+            font-weight: 700;
+            color: $purpleColor;
+        }
+    }
+
+    .patrocinadoresSectionImages {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.eventoSection {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .eventoSectionText {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-weight: 700;
+            color: $purpleColor;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+    }
+
+    .eventoSectionImagens {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+        .eventoSectionImagensCouple {
+            margin: 24px;
+            display: flex;
+        }
+    }
+
+    .eventoSectionTextPurple {
+        color: $purpleColor;
+        font-weight: 600;
+    }
+
+    .eventoSectionBtn {
+        margin-top: 20px;
+    }
+
+    .eventoSectionBtnBlack {
+        background-color: $primaryColor;
+        color: $whiteColor;
+        border-radius: 40px;
+        padding: 24px;
+        margin-right: 16px;
+    }
+
+    .eventoSectionBtnWhite {
+        background-color: $whiteColor;
+        color: $primaryColor;
+        border-radius: 40px;
+        padding: 24px;
+    }
+}
+
+.womantechSection {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .womantechSectionText {
+        padding: 20px 70px;
+
+    }
+
+    .womantechSectionTextRight {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h1 {
+            color: $purpleColor;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .womantechSectionBtn {
+            margin-top: 20px;
+        }
+    
+        .womantechSectionBtnBlack {
+            background-color: $primaryColor;
+            color: $whiteColor;
+            border-radius: 40px;
+            padding: 24px;
+            margin-right: 16px;
+        }
+    
+        .womantechSectionBtnWhite {
+            background-color: $whiteColor;
+            color: $primaryColor;
+            border-radius: 40px;
+            padding: 24px;
+        }
+
+    }
+}
+
+.voluntariasSection {
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 70vh;
+    padding: 50px;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .voluntariasSectionCards {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+
+        .voluntariasSectionCard {
+            display: flex;
+            flex-direction: column;
+            background-color: #1B0931;
+            border-radius: 20px;
+            color: $whiteColor;
+            padding: 20px 20px;
+            width: 35vh;
+        }
+
+        .voluntariasSectionBtnWhite {
+            background-color: $whiteColor;
+            color: $primaryColor;
+            border-radius: 40px;
+        }
+    }
+
+    .voluntariasSectionText {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .voluntariasSectionTextRight {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 40px;
+
+        h1 {
+            color: $purpleColor;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+
+    .voluntariasSectionBtnPurple {
+        padding: 24px;
+        background-color: $purpleColor;
+        color: $whiteColor;
+        width: 35vh;
+        border-radius: 20px;
+        display: flex;
+        width: fit-content;
+    }
+
+}
